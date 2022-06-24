@@ -1,0 +1,103 @@
+header h1,
+header p {
+  display: flex;
+  justify-content: center;
+  font-family: "Lobster", cursive;
+}
+body {
+  background-color: rgb(255, 153, 0);
+  font-size: 18px;
+}
+.section-content {
+  background-color: #ffd699;
+  margin: 20px 300px;
+  color: black;
+  border-radius: 50px;
+  padding: 50px 100px;
+  border: 50px solid black;
+  font-weight: normal;
+  font-family: "Lobster", cursive;
+}
+header:hover {
+  color: white;
+}
+.section-content:hover {
+  border: 50px solid chartreuse;
+}
+.section-common,
+.current-role,
+#fav-feature,
+.section-comments {
+  margin: 10px 30px;
+  width: 300px;
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+}
+
+label {
+  display: inline-block;
+  margin-top: 18px;
+}
+.current-role,
+#fav-feature {
+  width: 315px;
+}
+.section-comments {
+  height: 100px;
+}
+button {
+  padding: 10px 20px;
+  margin: 10px 140px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Lobster", cursive;
+  box-shadow: 0px 6px 12px rgb(255, 153, 0);
+}
+button:hover,
+input:hover,
+select:hover,
+.section-comments:hover {
+  background-color: chartreuse;
+}
+.section-refer label,
+.section-improve label {
+  display: inline-block;
+  margin-top: 10px;
+}
+.section-refer input,
+.section-improve input {
+  margin-left: 34px;
+  transform: scale(1.2);
+  margin-right: 5px;
+  accent-color: chartreuse;
+}
+::placeholder,select{
+  font-family: 'Lobster', cursive;
+}
+@media only screen and (max-width: 500px) {
+  header h1,
+  header p {
+    width: 600px;
+  }
+  .section-content {
+    margin: 15px 30px;
+    width: 290px;
+    padding: 20px 70px;
+  }
+  .section-common,
+  .section-comments {
+    width: 180px;
+  }
+  .current-role,
+  #fav-feature {
+    width: 195px;
+  }
+  .section-comments {
+    height: 50px;
+  }
+  button {
+    margin: 5px 90px;
+  }
+}
